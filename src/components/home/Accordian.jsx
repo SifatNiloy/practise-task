@@ -1,5 +1,3 @@
-import React from "react";
-
 const Accordion = () => {
   return (
     <div className="my-20 px-8 w-3/4 mx-auto">
@@ -47,7 +45,7 @@ const Accordion = () => {
             <p>
               Once your order is shipped, you will receive an email with the
               tracking information. You can use the provided tracking number on
-              the courier's website to monitor the status of your shipment. If
+              the couriers website to monitor the status of your shipment. If
               you have any issues, feel free to contact our support team.
             </p>
           </div>
