@@ -39,6 +39,14 @@
       "price": 55,
       "description": "Converse Chuck Taylor All Star sneakers are an all-time classic, offering a durable canvas upper and the iconic rubber toe cap.",
       "image_url": "https://img.freepik.com/free-psd/running-shoes-sneakers-transparent-background_84443-1652.jpg?t=st=1716455007~exp=1716458607~hmac=af9444d4ad6e512ec5536161b170df2e38eb9e88746863bf39c538aff9e2d986&w=1480"
+    },
+    {
+      "id": "94",
+      "title": "Sprint Men's Sports Shoe",
+      "brand": "Apex",
+      "price": "3290",
+      "description": "Introducing our men's sports shoe, engineered for optimal performance and comfort. Crafted with a highly breathable upper and textile lining, it ensures maximum airflow, keeping your feet cool and dry during intense activities. Experience the perfect blend of functionality and style, empowering you to conquer any workout with confidence.\nFeatures: \n\nHighly breathable upper \nTextile lining construction \nCushioned insole \nDurable sole ",
+      "image_url": "https://storage.apex4u.com/a1a339ba-cc77-402b-8ac7-0f0eda03b6e8.jpg"
     }
   ]
 }
