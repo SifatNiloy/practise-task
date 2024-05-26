@@ -16,24 +16,38 @@ const SingleProductCardDashboard = ({ shoe, onDelete }) => {
       });
   };
 
-  return (
-    <div className="card w-96 bg-base-100 shadow-xl">
-      <figure>
-        <img src={image_url} alt="Shoes" />
+ return (
+  <div className="card max-w-xs bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105">
+
+      <figure className="relative h-48 w-full overflow-hidden">
+        <img
+          src={image_url}
+          alt={title}
+          className="object-cover h-full w-full"
+        />
       </figure>
-      <div className="card-body">
-        <h2 className="card-title">{title}</h2>
-        <h3 className="text-xl font-semibold">{brand}</h3>
-        <h3 className="text-xl font-semibold">{price}</h3>
-        <p>{description}</p>
-        <div className="card-actions justify-end">
-          <button className="btn bg-indigo-500 text-white">
-            <Link to={`/products/${id}`}>See details</Link>
-          </button>
-          <button className="btn bg-green-600 text-white">
-            <Link to={`edit/${id}`}>Edit</Link>
-          </button>
-          <button onClick={handleDelete} className="btn bg-red-500 text-white">
+      <div className="card-body p-4">
+        <h2 className="card-title text-lg font-bold text-gray-800">{title}</h2>
+        <h3 className="text-md font-medium text-gray-600">{brand}</h3>
+        <h3 className="text-md font-medium text-gray-600">${price}</h3>
+        <p className="text-sm text-gray-600">{description}</p>
+        <div className="card-actions flex justify-end space-x-2 mt-4">
+          <Link
+            to={`/products/${id}`}
+            className="btn bg-indigo-500 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-indigo-600"
+          >
+            See details
+          </Link>
+          <Link
+            to={`edit/${id}`}
+            className="btn bg-green-600 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-green-700"
+          >
+            Edit
+          </Link>
+          <button
+            onClick={handleDelete}
+            className="btn bg-green-500 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-red-600"
+          >
             Delete
           </button>
         </div>
